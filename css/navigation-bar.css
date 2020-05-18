@@ -1,0 +1,258 @@
+/**** Navigation Bar ****/
+
+/** COLORS **/
+:root {
+  --blue: #455A64;
+  --white: #f0f4f3;
+  --orange: #ffae19;
+}
+
+.navigation-bar {
+  background: var(--blue);
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  font-family: "Lato", Georgia, serif;
+  font-weight: lighter;
+}
+
+.navigation-bar .header {
+  height: 72px;
+  border-bottom: 2px solid transparent;
+  border-color: var(--orange);
+}
+
+.logo {
+  cursor: pointer;
+  color: white;
+}
+
+.logo-icon,
+.logo-text,
+.logo-name {
+  height: 40px;
+  position:absolute;
+}
+
+.logo-icon,
+.logo-text {
+  top: 5px;
+}
+
+.logo-icon {
+  left: 30px;
+  height: 35px;
+  width: 35px;
+  background-image: url("../img/icon_large_screens.png");
+}
+
+.logo-text {
+  left: 70px;
+}
+
+.logo-text p {
+  font-family: "Courier New";
+  font-size: 11px;
+  height: 12px;
+  margin-bottom: 0;
+}
+
+.logo-name {
+  font-size: 21px;
+  font-family: "Raleway", Georgia, sans-serif;
+  top: 40px;
+  left: 15px;
+}
+
+.navigation-bar button {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 30px;
+  background: rgb(68, 68, 68); /* IE * transparent background */
+  background: rgba(0, 0, 0, 0); /* NON-IE transparent background */
+  border: none;
+}
+
+.navigation-bar button .icon-bar {
+  display: block;
+  height: 2px;
+  background: var(--white);
+}
+
+.navigation-bar button .icon-bar:not(#icon-bar-1) {
+  margin-top: 5px;
+}
+
+#icon-bar-1 {
+  width: 36px;
+}
+
+#icon-bar-2 {
+  width: 30.5px;
+  margin-left: 5.5px;
+}
+
+#icon-bar-3 {
+  width: 25px;
+  margin-left: 11px;
+}
+
+#icon-bar-4 {
+  width: 20px;
+  margin-left: 16px;
+}
+
+.navigation-bar button:hover .icon-bar {
+  background: var(--orange);
+}
+
+.navigation-bar .navigation-links {
+  display: block;
+  color: var(--white);
+  float: right;
+  margin-right: 15px;
+  margin-top: -72px;
+}
+
+.navigation-bar .navigation-links ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.navigation-bar .navigation-links li {
+  cursor: pointer;
+  display: inline-block; /* is needed for displaying links inline */
+}
+
+.navigation-bar .navigation-links li a {
+  display: inline-block; /* is needed for applying following style in anchor links (https://stackoverflow.com/questions/25680521/padding-not-working-in-anchor) */
+  color: var(--white);
+  font-size: 16px;
+  height: 70px;
+  padding-top: 26px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.navigation-bar .navigation-links li:hover,
+.navigation-bar .navigation-links li.active {
+  background: var(--white);
+}
+
+.navigation-bar .navigation-links li:hover a,
+.navigation-bar .navigation-links li.active a {
+  color: var(--blue);
+}
+
+.navigation-bar.transparent {
+  background: rgb(68, 68, 68); /* IE */
+  background: rgba(0, 0, 0, 0); /* NON-IE  */
+}
+
+.navigation-bar.transparent .header {
+  border: none;
+}
+
+.navigation-bar.transparent li a {
+  color: var(--blue);
+}
+
+.navigation-bar.transparent .navigation-links li:hover {
+  background: none;
+}
+
+.navigation-bar.transparent .navigation-links li:hover a {
+  color: #bd6904;
+}
+
+/**** Media Queries ****/
+/* MD to XL (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navigation-bar button {
+    display: none;
+  }
+
+  .navigation-bar .navigation-links {
+    display: block!important;
+  }
+
+}
+
+/* XL and up (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .logo-icon {
+    left: 45px;
+  }
+
+  .logo-text {
+    left: 85px;
+  }
+
+  .logo-name {
+    left: 30px;
+  }
+
+  .navigation-bar .navigation-links {
+    margin-right: 50px;
+  }
+}
+
+/* XS */
+@media (max-width: 575px) {
+  .logo-icon {
+    left: 25px;
+  }
+
+  .logo-text {
+    left: 65px;
+  }
+
+  .logo-name {
+    left: 10px;
+  }
+}
+
+/*XS and SM */
+@media (max-width: 767px) {
+  .navigation-bar .navigation-links {
+    display: none;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .navigation-bar .navigation-links ul {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .navigation-bar .navigation-links li {
+    display: block;
+  }
+
+  .navigation-bar .navigation-links li:last-child {
+    border-bottom: 2px solid transparent;
+    border-color: var(--orange);
+  }
+
+  .navigation-bar .navigation-links li a {
+    display: block;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 35px;
+  }
+}
+
+/* Smartphones and Touchscreens */
+@media (hover: none) and (pointer: coarse) {
+  .logo-icon {
+    background-image: url("../img/icon_small_screens.png");
+    background-size: cover;
+  }
+}

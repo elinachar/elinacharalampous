@@ -1,0 +1,605 @@
+/**** All pages ****/
+ * { box-sizing: border-box; }
+
+:root {
+  --color: #f37736;
+  --color-light: #fdf1ea;
+  --color-medium: #fce3d6;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f2f2f2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12),
+              0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.card {
+  background: white;
+  padding: 50px 40px;
+}
+
+.skill p,
+.language,
+.hobby {
+  display: inline-block;
+}
+
+
+/*** SCROLL ON TOP BUTTON ***/
+#scroll-top-btn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: thin solid;
+  outline: none; /* Remove outline */
+  color: #666666;
+  border-color: var(--color);
+  background: none;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  width: 48px;
+  height: 48px;
+  padding-bottom: 50px; /* Some padding */
+  font-size: 34px; /* Increase font size */
+  text-decoration: none; /* For not underlined on hover*/
+}
+
+#scroll-top-btn:hover {
+  background-color: var(--color-light);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+/* PERSONAL INFO */
+.personal-info {
+  margin-top: 100px;
+}
+
+.personal-info img {
+  opacity: 0.85;
+}
+
+.personal-info h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.personal-info hr {
+  border-color: var(--color-medium);
+}
+
+.personal-info .info-element p {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.personal-info .info-element .info-title {
+  padding-right: 30px;
+  width: 20%;
+  font-weight: 500;
+}
+
+.personal-info .info-element .info-text {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.social-media a {
+  text-decoration: none;
+}
+
+.social-media i {
+  color: var(--color);
+  font-size: 35px;
+  padding: 0 30px;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.social-media i:hover {
+  -webkit-animation-name: zoom-in-out;
+          animation-name: zoom-in-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoom-in-out {
+  25%  {-webkit-transform: scale(1.18);transform: scale(1.18);}
+  50%  {-webkit-transform: scale(1);transform: scale(1);}
+  100% {-webkit-transform: scale(1.18);transform: scale(1.18);}
+}
+
+@keyframes zoom-in-out {
+  25%  {-webkit-transform: scale(1.18);transform: scale(1.18);}
+  50%  {-webkit-transform: scale(1);transform: scale(1);}
+  100% {-webkit-transform: scale(1.18);transform: scale(1.18);}
+}
+
+/* EXPERIENCE & EDUCATION */
+.experience-education {
+  position:relative;
+}
+
+.experience-education h1 {
+  margin-bottom: 41px;
+}
+
+.vertical-line {
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  border-left: 6px solid var(--color-medium);
+}
+
+.experience-education .card {
+  width: 45%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.experience-education .card.position-left {
+  left: 15px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.experience-education .card.position-right {
+  right: 15px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.dot {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background: var(--color);
+  left: 50%;
+  margin-left: -6px;
+}
+
+.experience-title,
+.education-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* EXPERIENCE */
+.experience {
+  height: 1200px;
+}
+
+.experience .vertical-line {
+  height: 1100px;
+}
+
+#experience-dot-2 {
+  top: 200px;
+}
+
+#experience-dot-3 {
+  top: 440px;
+}
+
+#experience-dot-4 {
+  top: 515px;
+}
+
+#experience-dot-5 {
+  top: 765px;
+}
+
+#experience-dot-6 {
+  top: 865px;
+}
+
+#experience-card-1 {
+  top: 115px;
+}
+
+#experience-card-2 {
+  top: 215px;
+}
+
+#experience-card-3 {
+  top: 455px;
+}
+
+#experience-card-4 {
+  top: 530px;
+}
+
+#experience-card-5 {
+  top: 780px;
+}
+
+#experience-card-6 {
+  top: 880px;
+}
+
+/* EDUCATION */
+.education {
+  height: 750px;
+}
+
+.education .vertical-line {
+  height: 650px;
+}
+
+#education-dot-2 {
+  top: 200px;
+}
+#education-dot-3 {
+  top: 400px;
+}
+
+#education-dot-4 {
+  top: 500px;
+}
+
+#education-card-1 {
+  top: 115px;
+}
+
+#education-card-2 {
+  top: 215px;
+}
+
+#education-card-3 {
+  top: 415px;
+}
+
+#education-card-4 {
+  top: 515px;
+}
+
+/* SKILLS */
+.skill {
+  padding: 10px 20px;
+}
+
+.skill .skill-percent {
+  float: right;
+}
+
+.skill .loading-bar {
+  clear: both;
+  height: 8px;
+  border-radius: 8px;
+  clear: both;
+}
+
+.skill .loading-bar.full {
+  width: 100%;
+  background: var(--color-light);
+}
+
+.skill .loading-bar.percent {
+  background: var(--color);
+  width: 0px;
+  transition: width 3s;
+}
+
+/* LANGUAGES */
+.language {
+  width: 110px;
+  height: 110px;
+}
+
+.active-border {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background-color: var(--color);
+  background-image:
+    linear-gradient(91deg, transparent, var(--color-light)),
+    linear-gradient(90deg, var(--color-light), transparent);
+}
+
+.circle {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.language-name {
+  position: relative;
+  top: 28px;
+}
+
+.language-name p {
+  margin-bottom: 5px;
+}
+
+/* HOBBIES */
+.hobbies-wrapper {
+  margin-left: 20px;
+}
+
+.hobby {
+  background: var(--color-light);
+  border: thin solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 20px;
+  width: 104px;
+  margin-left: -20px;
+  visibility: hidden;
+}
+
+.hide-lg {
+  display: none;
+}
+
+/* XXS */
+@media (max-width: 499px) {
+  .personal-info .info-element p {
+    display: block;
+  }
+
+  .personal-info .info-element .info-title {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+/* SLIDE EFFECTS */
+.slide-up {
+  position: relative;
+  -webkit-animation: slideup;
+          animation: slideup;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideup {
+  0% {bottom: -300px;}
+  100% {bottom: 0px;}
+}
+
+@keyframes slideup {
+  0% {bottom: -300px;}
+  100% {bottom: 0px;}
+}
+
+.slide-left {
+  visibility: visible;
+  position: relative;
+  -webkit-animation: slideleft;
+          animation: slideleft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideleft {
+  from {right: -60vw;}
+  to {right: 0px;}
+}
+
+@keyframes slideleft {
+  from {right: -60vw;}
+  to {right: 0px;}
+}
+
+.slide-up-right {
+  visibility: visible!important;
+  position: relative;
+  -webkit-animation: slideupright;
+          animation: slideupright;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideupright {
+  0% { transform: translatex(-100px) translatey(100px) }
+  100% { transform: translatex(0px) translatey(0px) }
+}
+
+@keyframes slideupright {
+  0% { transform: translatex(-100px) translatey(100px) }
+  100% { transform: translatex(0px) translatey(0px) }
+}
+
+.slide-up-left {
+  visibility: visible!important;
+  position: relative;
+  -webkit-animation: slideupleft;
+          animation: slideupleft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideupleft {
+  0% { transform: translatex(100px) translatey(300px) }
+  100% { transform: translatex(0px) translatey(0px) }
+}
+
+@keyframes slideupleft {
+  0% { transform: translatex(100px) translatey(300px) }
+  100% { transform: translatex(0px) translatey(0px) }
+}
+
+/* XS */
+@media (max-width: 575px) {
+  .personal-info h1 {
+    font-size: 32px;
+  }
+
+  .social-media i {
+    padding: 8px 20px;
+  }
+
+  .experience-education {
+    height: auto;
+  }
+
+  .experience-education .card {
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+
+  .experience-education .card:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  .vertical-line {
+    z-index: -1;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .hobbies-wrapper {
+    width: 250px;
+    margin: auto;
+  }
+
+  .hobby {
+    margin-bottom: 20px;
+  }
+}
+
+/* XS and SM */
+ @media (max-width: 767px) {
+  .personal-info img {
+    max-height: 300px;
+    margin: auto;
+  }
+
+  .personal-info h1,
+  .personal-info h2 {
+    text-align: center;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+
+  .personal-info h2 {
+    font-size: 16px;
+  }
+
+  .language.bottom-gap {
+    margin-bottom: 30px;
+  }
+}
+
+/*  SM and MD */
+@media (min-width: 576px) and (max-width: 991px) {
+  .experience {
+    height: 1310px;
+  }
+
+  .experience .vertical-line {
+    height: 1210px;
+  }
+
+  #experience-dot-3 {
+    top: 505px;
+  }
+
+  #experience-dot-4 {
+    top: 605px;
+  }
+
+  #experience-dot-5 {
+    top: 900px;
+  }
+
+  #experience-dot-6 {
+    top: 1000px;
+  }
+
+  #experience-card-3 {
+    top: 520px;
+  }
+
+  #experience-card-4 {
+    top: 620px;
+  }
+
+  #experience-card-5 {
+    top: 915px;
+  }
+
+  #experience-card-6 {
+    top: 1015px;
+  }
+}
+
+/* XS and SM and MD */
+@media (max-width: 991px) {
+
+  .hobby {
+    width: 74px;
+  }
+
+  .show-lg {
+    display: none;
+  }
+
+  .hide-lg {
+    display: block;
+  }
+
+}
+
+/* SM */
+@media (min-width: 576px) and (max-width: 767px) {
+  .experience-education .card {
+    width: 44%;
+  }
+
+  .experience-education .card.position-left {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .experience-education .card.position-right {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+}
+
+/* LG */
+@media only screen and (min-width: 992px) and (max-width: 1199) {
+  .card {
+    padding: 50px;
+  }
+}
+
+/* XL  */
+@media only screen and (min-width: 1200px) {
+  .card {
+    padding: 40px 50px;
+  }
+}
