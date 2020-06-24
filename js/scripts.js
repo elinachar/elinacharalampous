@@ -384,7 +384,7 @@ function initMap() {
 
   marker = new google.maps.Marker({
     position: pos,
-    icon: "img/marker4.png",
+    icon: "img/marker.png",
     map: map,
   });
   marker.addListener('click', toggleDrop);
