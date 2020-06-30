@@ -50,7 +50,7 @@ body {
   border-color: var(--color);
   background: none;
   cursor: pointer; /* Add a mouse pointer on hover */
-  width: 50px !important;
+  /* width: 50px !important; */
   height: 50px;
   font-size: 20px;
   text-decoration: none; /* For not underlined on hover*/
