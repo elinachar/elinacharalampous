@@ -7,17 +7,17 @@ $(document).ready(function(){
   }
 
   // Smooth scrolling on single-page and
-  // Close collapsed navigation-bar when clicking link
   var $root = $('html, body');
-  $('.navigation-bar a').click(function() {
-
+  $('.navigation-bar a').click(function(e) {
     // Smooth scrolling
-    var href = $.attr(this, 'href'), offset = 80;
-    if ( href != undefined && href != '#') {
+    var hash = $.attr(this, 'href'), offset = 80;
+    if ( hash != undefined && hash != '#') {
+      isRunningAnimation = true;
       $root.animate({
-        scrollTop: $(href).offset().top - offset
+        scrollTop: $(hash).offset().top - offset
       }, 500, function () {
-        activateLinkupdateHash(href);
+        activateLinkupdateHash(hash, "navClick", e);
+        isRunningAnimation = false;
       });
     }
 
@@ -154,7 +154,7 @@ $(document).ready(function(){
   // Flip Portfolio cards in touch screens
   $(".container-portfolio .flip").on("click", function() {
     if ( is_touch_device() ) {
-      $(this).find(".front a").removeAttr('href');
+      $(this).find(".front a").removeAttr('hash');
       $(this).find(".card").toggleClass("flipped");
     }
   });
@@ -327,35 +327,38 @@ $(document).ready(function(){
   $(".copyright span").append( (new Date).getFullYear() );
 });
 
-var hrefList = ["#services", "#about", "#portfolio", "#faq", "#contact"]
-function activateLinkupdateHash(href) {
+var hashList = ["#services", "#about", "#portfolio", "#faq", "#contact"]
+var count = 0;
+function activateLinkupdateHash(hash, source) {
   // Update hash in url
-  // Use this for not jumb or need douple click to scrool down to proper position
-  if ( href == "#page-top") {
+  // Use this for not jumb or need double click to scroll down to proper position
+  if ( hash == "#page-top") {
     location.hash = ''; // for older browsers, leaves a # behind
     history.pushState('', document.title, window.location.pathname); // nice and clean
     // e.preventDefault(); // no page reload
   } else {
     if (history.pushState) {
-      history.pushState(null, null, href);
+      history.pushState(null, null, hash);
     } else {
-      location.hash = href;
+      location.hash = hash;
     }
   }
 
   // Activate link in Navigation-bar in current hash
   // Deactivate other links
-  $.each( hrefList, function( index, value ){
-    $("a[href$='" + value  + "']").parent().removeClass("active");
+  $.each( hashList, function( index, value ){
+    $("a[hash$='" + value  + "']").parent().removeClass("active");
   });
-  $("a[href$='" + href  + "']").parent().addClass("active");
+  $("a[hash$='" + hash  + "']").parent().addClass("active");
 };
 
-
+var isRunningAnimation = false;
+var currentHash;
 $(document).bind('scroll',function(e){
-  var href;
+  var hash;
+  currentHash = window.location.hash
   if (window.pageYOffset == 0) {
-    href = "#page-top";
+    hash = "#page-top";
   } else {
     $('.anchor').each(function(){
       if (
@@ -365,11 +368,17 @@ $(document).bind('scroll',function(e){
         //but ends in visible area
         //+ 10 allows you to change hash before it hits the top border
       ) {
-        href = "#" + $(this).attr('id');
+        hash = "#" + $(this).attr('id');
       }
     });
   }
-  activateLinkupdateHash(href);
+  // Change hash only if hash changed or when nav link is clicked, not while scrolling
+  // For smooth scrolling history.pushState is needed and should call it only when
+  // hash is really changed because in Safari there is a limitation of
+  // 100 history.pushState changes per 30sec.
+  if ( (currentHash != hash) && !(isRunningAnimation) ) {
+    activateLinkupdateHash(hash, "scroll", e);
+  }
 });
 
 // API Google Map

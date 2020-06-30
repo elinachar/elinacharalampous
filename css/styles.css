@@ -16,6 +16,7 @@
 body {
   font-family: Lato, Raleway, Georgia, serif;
   font-weight: lighter;
+  font-size: 16px;
 }
 
 h1,
@@ -181,8 +182,8 @@ ul {
 .about-skills h6 {
   margin: 0;
   line-height: 1.4;
-  font-size: 1.25em;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: regular;
   color: #606060;
   padding-bottom: 20px;
 }
@@ -485,6 +486,10 @@ ul {
   margin:0 auto;
 }
 
+#faq-explanation {
+  font-size: 14px;
+}
+
 .container-faq .flip {
   margin: 30px auto 0px auto;
 }
@@ -522,7 +527,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 textarea {
-  font-size: 16px!important;
+  font-size: 17px!important;
 }
 
 .error-message,
@@ -564,6 +569,7 @@ textarea {
   border: solid thin;
   border-color: rgba(0,0,0,0.2);
   color: var(--blue);
+  font-size: 16px;
   height: 48px;
   width: 80px;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
@@ -591,6 +597,10 @@ textarea {
   height: 290px;
 }
 
+.contact-info {
+  background-color: var(--blue);
+}
+
 .contact-info,
 .contact-info h2,
 .contact-info a,
@@ -598,8 +608,8 @@ textarea {
   color: var(--white);
 }
 
-.contact-info {
-  background-color: var(--blue);
+.contact-info h2 {
+  margin-top: 15px;
 }
 
 address span {
