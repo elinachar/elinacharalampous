@@ -53,7 +53,8 @@ body {
   width: 50px !important;
   height: 50px;
   padding-bottom: 50px; /* Some padding */
-  font-size: 34px; /* Increase font size */
+  /* font-size: 34px;  */
+  /* Increase font size */
   text-decoration: none; /* For not underlined on hover*/
 }
 
