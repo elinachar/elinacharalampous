@@ -19,12 +19,19 @@ body {
   font-size: 16px;
 }
 
-h1,
+h1
 h2,
 h3,
 #faq-explanation {
   font-family:  Raleway, Georgia, serif;
   color: var(--blue);
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: inherit;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 /** USEFULL CLASSES **/
@@ -61,10 +68,10 @@ ul {
   list-style-type: none;
 }
 
-.container-services h1,
-.container-about h1,
-.container-portfolio h1,
-.container-contact h1 {
+.container-services h2,
+.container-about h2,
+.container-portfolio h2,
+.container-contact h2 {
   margin-bottom: 30px;
 }
 
@@ -346,7 +353,7 @@ ul {
   padding: 30px 20px 20px 20px;
 }
 
-.skills h2 {
+.skills h3 {
   margin-top: 0;
 }
 
@@ -602,13 +609,13 @@ textarea {
 }
 
 .contact-info,
-.contact-info h2,
+.contact-info h3,
 .contact-info a,
 .social-media i {
   color: var(--white);
 }
 
-.contact-info h2 {
+.contact-info h3 {
   margin-top: 15px;
 }
 
