@@ -735,6 +735,10 @@ address a:hover,
     margin-top: 20px;
   }
 
+  .skills {
+    margin-top: 30px;
+  }
+
   .container-faq .flip .card .front {
     position: relative;
   }

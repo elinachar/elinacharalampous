@@ -50,7 +50,7 @@ body {
   border-color: var(--color);
   background: none;
   cursor: pointer; /* Add a mouse pointer on hover */
-  width: 48px;
+  width: 48px !important;
   height: 48px;
   padding-bottom: 50px; /* Some padding */
   font-size: 34px; /* Increase font size */
