@@ -1,0 +1,8 @@
+# Set index.html as root directory
+DirectoryIndex index.html
+
+# Remove .html extension of url links
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
