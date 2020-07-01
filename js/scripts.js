@@ -327,7 +327,7 @@ $(document).ready(function(){
   $(".copyright span").append( (new Date).getFullYear() );
 });
 
-// After document is loaded
+// After document is loaded add alt for google maps
 $(window).load(function(){
   // After Google maps have been loaded
   // Add alt tags to all of it images for SEO needs.
