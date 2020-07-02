@@ -636,6 +636,12 @@ address span {
   margin: 10px;
 }
 
+.social-media a {
+  display: inline-block;
+  width: 55px;
+  margin: 0px 8px;
+}
+
 .social-media i {
   font-size: 40px;
   padding: 10px;

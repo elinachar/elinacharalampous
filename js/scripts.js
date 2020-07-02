@@ -327,26 +327,6 @@ $(document).ready(function(){
   $(".copyright span").append( (new Date).getFullYear() );
 });
 
-// After document is loaded add alt for google maps
-$(window).load(function(){
-  // After Google maps have been loaded
-  // Add alt tags to all of it images for SEO needs.
-  altImgMap();
-  function altImgMap() {
-    if (typeof google === 'object' && typeof google.maps === 'object') {
-      // Get all the images in the google map
-      var googleMapImages = $("#map img");
-      // Check which images do not have alt attribute and add an empty one
-      googleMapImages.each(function( index, value ) {
-        if (typeof $(value).attr("alt")== typeof undefined || $(value).attr("alt") == false) {
-          $(value).attr("alt" , "Google Maps");
-        }
-      })
-    }
-  };
-});
-
-
 var hashList = ["#services", "#about", "#portfolio", "#faq", "#contact"]
 var count = 0;
 function activateLinkupdateHash(hash, source) {
@@ -432,3 +412,22 @@ function is_touch_device() {
     return false;
   }
 }
+
+// After document is loaded add alt for google maps
+$(window).load(function(){
+  // After Google maps have been loaded
+  // Add alt tags to all of it images for SEO needs.
+  altImgMap();
+  function altImgMap() {
+    if (typeof google === 'object' && typeof google.maps === 'object') {
+      // Get all the images in the google map
+      var googleMapImages = $("#map img");
+      // Check which images do not have alt attribute and add an empty one
+      googleMapImages.each(function( index, value ) {
+        if (typeof $(value).attr("alt")== typeof undefined || $(value).attr("alt") == false) {
+          $(value).attr("alt" , "Google Maps");
+        }
+      })
+    }
+  };
+});
