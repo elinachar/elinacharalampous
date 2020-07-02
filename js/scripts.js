@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   // Smooth scrolling on single-page and
   var $root = $('html, body');
-  $('.navigation-bar a').click(function(e) {
+  $('.navigation-bar a').click(function() {
     // Smooth scrolling
     var hash = $.attr(this, 'href'), offset = 80;
     if ( hash != undefined && hash != '#') {
@@ -16,7 +16,7 @@ $(document).ready(function(){
       $root.animate({
         scrollTop: $(hash).offset().top - offset
       }, 500, function () {
-        activateLinkupdateHash(hash, "navClick", e);
+        activateLinkupdateHash(hash);
         isRunningAnimation = false;
       });
     }
@@ -329,7 +329,7 @@ $(document).ready(function(){
 
 var hashList = ["#services", "#about", "#portfolio", "#faq", "#contact"]
 var count = 0;
-function activateLinkupdateHash(hash, source) {
+function activateLinkupdateHash(hash) {
   // Update hash in url
   // Use this for not jumb or need double click to scroll down to proper position
   if ( hash == "#page-top") {
@@ -377,7 +377,7 @@ $(document).bind('scroll',function(e){
   // hash is really changed because in Safari there is a limitation of
   // 100 history.pushState changes per 30sec.
   if ( (currentHash != hash) && !(isRunningAnimation) ) {
-    activateLinkupdateHash(hash, "scroll", e);
+    activateLinkupdateHash(hash);
   }
 });
 
