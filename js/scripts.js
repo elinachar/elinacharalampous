@@ -303,8 +303,9 @@ $(document).ready(function(){
       $(".hidden-after-submit").hide();
     } else {
       $("form").addClass("error-mode");
+      return false;
     };
-    return false;
+
   });
 
   // Drop Marker
