@@ -355,9 +355,9 @@ function activateLinkupdateHash(hash) {
   // Activate link in Navigation-bar in current hash
   // Deactivate other links
   $.each( hashList, function( index, value ){
-    $("a[hash$='" + value  + "']").parent().removeClass("active");
+    $("a[href$='" + value  + "']").parent().removeClass("active");
   });
-  $("a[hash$='" + hash  + "']").parent().addClass("active");
+  $("a[href$='" + hash  + "']").parent().addClass("active");
 };
 
 var isRunningAnimation = false;
