@@ -552,6 +552,10 @@ textarea {
 
 .error-mode .error-message {
   display: block;
+}
+
+.error-mode .error-message,
+#comment-mail-not-sent {
   color: var(--orange);
   background-color: #fff6e8;
   font-size: 21px;
@@ -593,7 +597,7 @@ textarea {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-#visible-comment {
+#comment-mail-sent {
   display: none;
   font-size: 20px;
   line-height: 1.6;
@@ -601,6 +605,10 @@ textarea {
   border: solid thin var(--blue);
   border-left: none;
   border-right: none;
+}
+
+#comment-mail-not-sent {
+	display: none;
 }
 
 .google-map {

@@ -231,6 +231,15 @@ $(document).ready(function(){
   })
 
   // CONTACT SECTION
+  // Check if mail has been send
+  if (window.location.href.includes("?mailsend")) {
+    $("#comment-mail-sent").show();
+	  $("#comment-mail-not-sent").hide();
+    $(".hidden-after-submit").hide();
+  } else if (window.location.href.includes("?mailnotsend")) {
+    $("#comment-mail-not-sent").show();
+  }
+
   // Change background color when focusing on form elements
   $(".container-contact input, .container-contact textarea").focus(function(){
     $(this).css("background-color", "#cccccc");
@@ -299,8 +308,6 @@ $(document).ready(function(){
     // If all required fields are filled then submit the form and show thanks message
     if (bNameEntry == true && bPhoneEntry == true && bEmailEntry == true && bTextMessageEntry == true) {
       $("form").removeClass("error-mode");
-      $("#visible-comment").show();
-      $(".hidden-after-submit").hide();
     } else {
       $("form").addClass("error-mode");
       return false;

@@ -525,10 +525,13 @@
           <p style="font-size:1.1em"> If you are interested in working together or if you have any queries please feel free to contact me. Just fill in the following form, send me direct an e-mail or just call me. <br><br>I would be glad to hear from you!</p>
         </div>
 
-        <form class="col-xs-8 col-xs-offset-2" action="https://formspree.io/xqkygbkv" method="POST">
+        <form class="col-xs-8 col-xs-offset-2" action="contactform.php" method="POST">
           <div class="row">
-            <div id="visible-comment">
+            <div id="comment-mail-sent">
               Thank you! Your message has been sent successfully. <br> I will get back to you as soon as possible.
+            </div>
+			      <div id="comment-mail-not-sent">
+              Sorry.. your e-mail could not be send successfully. <br> Please try again later.
             </div>
             <div class="error-message">
               <p>There was an error with your submission. Please check the errors highligted below.</p>
@@ -552,7 +555,7 @@
             <div class="col-sm-12 email-field error">
               <div class="form-group hidden-after-submit">
                 <label for="form-email" title="This field is required" id="form-email-label" class="sr-only">E-mail *</label>
-                <input type="email"  placeholder="Your e-mail *" required="required" id="form-email" class="form-control" name="_replyto" >
+                <input type="email"  placeholder="Your e-mail *" required="required" id="form-email" class="form-control" name="mail" >
               </div> <!-- end form-group -->
               <div class="error-field">This field is required</div>
             </div> <!-- end email -->
@@ -561,8 +564,6 @@
               <div class="form-group">
                 <label class="hidden-after-submit sr-only" for="form-message" title="This field is required" id="message-box-label">Your message to me *<span id="message-box-error-label" style="align:left"></span></label>
                 <textarea class="message-box form-control hidden-after-submit" placeholder="Your message to me *"  required="required" style="resize:none" cols="40" rows="5" id="form-message" name="message"></textarea>
-                <p id="char-count" class="hidden-after-submit"></p>
-                <p id="visible-comment"></p>
               </div> <!-- end form-group -->
               <div class="error-field">This field is required</div>
             </div> <!-- end message -->
@@ -570,7 +571,7 @@
 
           <div class="form-group">
             <label for="form-submit-button" class="sr-only">Submit Button</label>
-            <button type="submit" class="btn btn-default hidden-after-submit" id="form-submit-button">Submit</button>
+            <button type="submit" class="btn btn-default hidden-after-submit" id="form-submit-button" name="submit">Submit</button>
           </div> <!-- end form-group -->
         </form>
 

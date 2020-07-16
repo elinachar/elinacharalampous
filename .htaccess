@@ -1,8 +1,14 @@
-# Set index.html as root directory
-DirectoryIndex index.html
+# Set index.php as root directory
+DirectoryIndex index.php
 
 # Remove .html extension of url links
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+#Remove .php extension of url links
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
