@@ -17,8 +17,8 @@ $(document).ready(function() {
     skillsScrolled = false, languagesScrolled = false, hobbiesScrolled = false;
   var windowHeight = $(window).height();
   var experiencePart1Top = $(".experience").offset().top
-  var experiencePart2Top = $("#experience-card-3").offset().top
-  var experiencePart3Top = $("#experience-card-5").offset().top
+  var experiencePart2Top = $("#experience-card-3").offset().top-30
+  var experiencePart3Top = $("#experience-card-5").offset().top-30
   var educationPart1Top = $(".education").offset().top
   var educationPart2Top = $("#education-card-3").offset().top
   var skillsTop = $(".skills").offset().top;

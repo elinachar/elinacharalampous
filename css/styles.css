@@ -287,7 +287,7 @@ ul {
 }
 
 .container-portfolio .flip:hover .fade {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .container-portfolio .flip .project-text {
