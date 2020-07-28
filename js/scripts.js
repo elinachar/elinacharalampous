@@ -151,10 +151,11 @@ $(document).ready(function(){
       $(".project-text.on-hover", this).fadeOut(250);
   });
 
+
   // Flip Portfolio cards in touch screens
   $(".container-portfolio .flip").on("click", function() {
     if ( is_touch_device() ) {
-      $(this).find(".front a").removeAttr('hash');
+      $(this).find(".front a").removeAttr('href');
       $(this).find(".card").toggleClass("flipped");
     }
   });
