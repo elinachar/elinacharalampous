@@ -226,7 +226,7 @@
       </div> <!-- end header -->
 
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
           <div class="flip">
             <div class="card border-shadow">
                 <div class="face front">
@@ -253,7 +253,7 @@
           </div> <!-- end flip -->
         </div>
 
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
           <div class="flip">
             <div class="card border-shadow">
                 <div class="face front">
@@ -280,7 +280,7 @@
           </div> <!-- end flip -->
         </div>
 
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
           <div class="flip">
             <div class="card border-shadow">
                 <div class="face front">
@@ -298,6 +298,33 @@
                     <td align="center" class="project-text on-click text-center centered">
                       <span>Bake is Yum</span><br>Demo Blog for Baking<br>
                       <a href="http://bakeisyum.herokuapp.com/" target="_blank">
+                      <i class="fa fa-link"></i></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end flip -->
+        </div>
+
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
+          <div class="flip">
+            <div class="card border-shadow">
+                <div class="face front">
+                  <a href="https://animalpuzzles.herokuapp.com/" target="_blank">
+                    <img src="img/AnimalPuzzles.png"
+                    alt="https://animalpuzzles.herokuapp.com/" class="img-responsive fade">
+                    <div class="project-text on-hover text-center centered">
+                    <span>Animal Puzzles</span><br>Demo Block Puzzle with Animals<br>(Covid-19 Quarantine)<br><br>
+                    <span>animalpuzzles.herokuapp.com</span></div>
+                  </a>
+                </div>
+              <div class="face back">
+                <table>
+                  <tr>
+                    <td align="center" class="project-text on-click text-center centered">
+                      <span>Animal Puzzles</span><br>Covid-19 Demo for Kids<br><br>
+                      <a href="https://animalpuzzles.herokuapp.com/" target="_blank">
                       <i class="fa fa-link"></i></a>
                     </td>
                   </tr>
@@ -530,7 +557,7 @@
             <div id="comment-mail-sent">
               Thank you! Your message has been sent successfully. <br> I will get back to you as soon as possible.
             </div>
-			      <div id="comment-mail-not-sent">
+            <div id="comment-mail-not-sent">
               Sorry.. your e-mail could not be send successfully. <br> Please try again later.
             </div>
             <div class="error-message">
