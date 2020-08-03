@@ -629,7 +629,7 @@
             </a>
           </div> <!-- end social-media -->
 
-          <div class="copyright"><span>&copy; Elina Charalampous </span></div>
+          <div class="copyright"><span>&copy; Elina Charalampous 2018-</span></div>
         </div> <!-- end info -->
       </div> <!-- end row -->
 
