@@ -375,7 +375,7 @@
               programming! So exiting!<br><br>
 
               I love this field! Data analysis and the creation of automation
-              tools is my thing! My second master in geomatics helped me dive
+              tools is what I like to do! My second master in geomatics helped me dive
               deeper in the field of computer science and broaden my programming
               knowledge and skills.<br><br>
 
@@ -526,7 +526,7 @@
               <div class="face back">
                 <table>
                   <tr>
-                    <td align="center">I would be glad to help you make your dream website come true! Please do not hesitate to contact me through my contact page. After contacting me, we will arrange a skype meeting or a telephone call, where you could explain me in detail your project idea and I will give you all the information you need.</td>
+                    <td align="center">I would be glad to help you make your dream website come true! Please do not hesitate to contact me through my contact page. After contacting me, we will arrange a meeting or a telephone call, where you could explain me in detail your project idea and I will give you all the information you need.</td>
                   </tr>
                 </table>
               </div>
@@ -552,7 +552,7 @@
           <p style="font-size:1.1em"> If you are interested in working together or if you have any queries please feel free to contact me. Just fill in the following form, send me direct an e-mail or just call me. <br><br>I would be glad to hear from you!</p>
         </div>
 
-        <form class="col-xs-8 col-xs-offset-2" action="contactform.php" method="POST">
+        <form class="col-xs-10 col-xs-offset-1" action="contactform.php" method="POST">
           <div class="row">
             <div id="comment-mail-sent">
               Thank you! Your message has been sent successfully. <br> I will get back to you as soon as possible.
