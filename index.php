@@ -372,7 +372,7 @@
               Geomatics in simple words is the field of surveying engineer and
               geospatial science for collecting, processing and delivering
               geospatial information. And how is this done? Of course with
-              programming! So exiting!<br><br>
+              programming!<br><br>
 
               I love this field! Data analysis and the creation of automation
               tools is what I like to do! My second master in geomatics helped me dive
