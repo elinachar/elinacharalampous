@@ -398,7 +398,7 @@
             <div class="row">
               <div class="col-xs-6 col-sm-3 skill-topic"><i class="fa fa-cogs"></i><span>Hard worker</span></div>
               <div class="col-xs-6 col-sm-3 skill-topic"><i class="fa fa-thumbs-up"></i><span>Self motivated</span></div>
-              <div class="col-xs-6 col-sm-3 skill-topic"><i class="fa fa-group"></i><span>Team work</span></div>
+              <div class="col-xs-6 col-sm-3 skill-topic"><i class="fa fa-group"></i><span>Teamwork</span></div>
               <div class="col-xs-6 col-sm-3 skill-topic"><i class="fa fa-comments"></i><span>Communicative</span></div>
               <div class="col-xs-6 col-sm-3 skill-topic"><i class="material-icons">access_time</i><span>Time management</span></div>
               <div class="col-xs-6 col-sm-3 skill-topic"><i class="fa fa-puzzle-piece"></i><span>Problem solver</span></div>
