@@ -353,7 +353,7 @@
           <div class="about-text">
             <p>Hi! I am Elina!</p>
             <p>I am an engineer who loves programming!</p>
-            <p>I was always wanted to become a programmer. Since high school I
+            <p>I always wanted to become a programmer. Since high school I
               realized that programming is the way to make life easier and more
               fun!  <br><br>
 
