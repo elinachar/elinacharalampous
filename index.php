@@ -21,7 +21,7 @@
      websites, software solutions and data analysis.">
     <meta name="keywords" content=" web development, web design, responsive
     design, web solutions, webpage creations, software development, data analysis, data processing">
-    <meta name="image" content="img/meta_image.png">
+    <meta name="image" content="https://elinacharalampous.gr/img/meta_image.jpg">
 
     <!-- Favicon Tag -->
     <link rel="shortcut icon" href="favicon.ico">
