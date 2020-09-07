@@ -29,14 +29,17 @@
     <!-- Canonical Tag -->
     <link rel=“canonical” href=“https://elinacharalampous.gr”>
 
-
     <!-- Facebook meta tags -->
     <meta property="og:title" content="Elina Charalampous" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.elinacharalampous.gr" />
     <meta property="og:image" content="https://elinacharalampous.gr/img/meta_image.jpg">
     <meta property="og:image:alt" content="Elina Charalampous | Web Developer | Software Developer | Data Analyst" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:description" content="Elina Charalampous | Web Developer | Software Developer | Data Analyst" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="elinacharalampous">
 
     <!-- Google Material Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
