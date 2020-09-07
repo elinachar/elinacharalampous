@@ -34,7 +34,7 @@
     <meta property="og:title" content="Elina Charalampous" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.elinacharalampous.gr" />
-    <meta property="og:image" content="https://www.elinacharalampous.gr/img/meta_image.png">
+    <meta property="og:image" content="https://elinacharalampous.gr/img/meta_image.jpg">
     <meta property="og:image:alt" content="Elina Charalampous | Web Developer | Software Developer | Data Analyst" />
     <meta property="og:description" content="Elina Charalampous | Web Developer | Software Developer | Data Analyst" />
 
