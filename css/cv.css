@@ -481,6 +481,14 @@ h2 {
     z-index: -1;
   }
 
+  .experience .vertical-line {
+    height: 97%!important;
+  }
+
+  .education .vertical-line {
+    height: 95%!important;
+  }
+
   .dot {
     display: none;
   }
@@ -523,11 +531,11 @@ h2 {
 /*  SM and MD */
 @media (min-width: 576px) and (max-width: 991px) {
   .experience {
-    height: 1310px;
+    height: 1210px;
   }
 
   .experience .vertical-line {
-    height: 1210px;
+    height: 1110px;
   }
 
   #experience-dot-3 {
@@ -565,7 +573,6 @@ h2 {
 
 /* XS and SM and MD */
 @media (max-width: 991px) {
-
   .hobby {
     width: 74px;
   }
