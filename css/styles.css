@@ -736,6 +736,10 @@ address a:hover,
   .flip {
     padding: 0px 30px;
   }
+
+  .container-faq .flip {
+    height: 335px !important;
+  }
 }
 
 /* XS */
