@@ -21,7 +21,7 @@
      websites, software solutions and data analysis.">
     <meta name="keywords" content=" web development, web design, responsive
     design, web solutions, webpage creations, software development, data analysis, data processing">
-    <meta name="image" content="https://elinacharalampous.gr/img/meta_image.jpg">
+    <meta name="image" content="img/meta_image.png">
 
     <!-- Favicon Tag -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -29,17 +29,14 @@
     <!-- Canonical Tag -->
     <link rel=“canonical” href=“https://elinacharalampous.gr”>
 
+
     <!-- Facebook meta tags -->
     <meta property="og:title" content="Elina Charalampous" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.elinacharalampous.gr" />
-    <meta property="og:image" content="https://elinacharalampous.gr/img/meta_image.jpg">
+    <meta property="og:image" content="https://www.elinacharalampous.gr/img/meta_image.png">
     <meta property="og:image:alt" content="Elina Charalampous | Web Developer | Software Developer | Data Analyst" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
     <meta property="og:description" content="Elina Charalampous | Web Developer | Software Developer | Data Analyst" />
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="elinacharalampous">
 
     <!-- Google Material Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -174,7 +171,7 @@
 
           <!-- 1st service -->
           <li class="col-xs-12 col-md-4">
-              <div class="card service-item text-center border-shadow" id="service-item-1">
+              <div class="card service-item text-center border-shadow rounded-edges" id="service-item-1">
                   <!-- Edit icon and title here -->
                   <i class="fa fa-chain"></i>
                   <h6>Web Development</h6>
@@ -191,7 +188,7 @@
 
           <!-- 2nd service -->
           <li class="col-xs-12  col-md-4">
-              <div class="card service-item text-center border-shadow" id="service-item-2">
+              <div class="card service-item text-center border-shadow rounded-edges" id="service-item-2">
                   <!-- Edit icon and title here -->
                   <i class="material-icons">desktop_windows</i>
                   <h6>Software Development</h6>
@@ -206,7 +203,7 @@
 
           <!-- 3rd service -->
           <li class="col-xs-12  col-md-4">
-              <div class="card service-item text-center border-shadow" id="service-item-3">
+              <div class="card service-item text-center border-shadow rounded-edges" id="service-item-3">
                     <i class="fa fa-line-chart"></i>
                   <h6>Data Analysis</h6>
                   <ul>
@@ -231,7 +228,7 @@
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
           <div class="flip">
-            <div class="card border-shadow">
+            <div class="card border-shadow rounded-edges">
                 <div class="face front">
                   <a href="https://theofilosvenardos.com/" target="_blank">
                     <img src="img/TheofilosVenardos.png"
@@ -241,7 +238,7 @@
                     <span>theofilosvenardos.com</span></div>
                   </a>
                 </div>
-              <div class="face back">
+              <div class="face back rounded-edges">
                 <table>
                   <tr>
                     <td align="center" class="project-text on-click text-center centered">
@@ -258,7 +255,7 @@
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
           <div class="flip">
-            <div class="card border-shadow">
+            <div class="card border-shadow rounded-edges">
                 <div class="face front">
                   <a href="http://pilatesstudioaskisi.gr/" target="_blank">
                     <img src="img/PilatesStudioAskisi.png"
@@ -268,7 +265,7 @@
                     <span>pilatesstudioaskisi.gr</span></div>
                   </a>
                 </div>
-              <div class="face back">
+              <div class="face back rounded-edges">
                 <table>
                   <tr>
                     <td align="center" class="project-text on-click text-center centered">
@@ -285,7 +282,7 @@
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
           <div class="flip">
-            <div class="card border-shadow">
+            <div class="card border-shadow rounded-edges">
                 <div class="face front">
                   <a href="http://bakeisyum.herokuapp.com/" target="_blank">
                     <img src="img/BakeIsYum.png" alt="http://bakeisyum.herokuapp.com"
@@ -295,7 +292,7 @@
                       <span>bakeisyum.herokuapp.com</span></div>
                   </a>
                 </div>
-              <div class="face back">
+              <div class="face back rounded-edges">
                 <table>
                   <tr>
                     <td align="center" class="project-text on-click text-center centered">
@@ -312,7 +309,7 @@
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
           <div class="flip">
-            <div class="card border-shadow">
+            <div class="card border-shadow rounded-edges">
                 <div class="face front">
                   <a href="https://animalpuzzles.herokuapp.com/" target="_blank">
                     <img src="img/AnimalPuzzles.png"
@@ -322,7 +319,7 @@
                     <span>animalpuzzles.herokuapp.com</span></div>
                   </a>
                 </div>
-              <div class="face back">
+              <div class="face back rounded-edges">
                 <table>
                   <tr>
                     <td align="center" class="project-text on-click text-center centered">
@@ -396,7 +393,7 @@
 
       <div class="row">
         <div class="col-sm-12 col-md-10">
-          <div class="border-shadow card text-center skills">
+          <div class="border-shadow card text-center skills rounded-edges">
             <h3>My Skills</h3>
             <div class="row">
               <div class="col-xs-6 col-sm-3 skill-topic"><i class="fa fa-cogs"></i><span>Hard worker</span></div>
@@ -434,8 +431,8 @@
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
           <div class="flip">
-            <div class="card border-shadow">
-              <div class="face front">
+            <div class="card border-shadow rounded-edges">
+              <div class="face front rounded-edges">
                 <table>
                   <tr>
                     <td align="center">From where do you work?</td>
@@ -455,8 +452,8 @@
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
           <div class="flip">
-            <div class="card border-shadow">
-              <div class="face front">
+            <div class="card border-shadow rounded-edges">
+              <div class="face front rounded-edges">
                 <table>
                   <tr>
                     <td align="center">Do you only accept projects from greek clients?</td>
@@ -476,8 +473,8 @@
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
           <div class="flip">
-            <div class="card border-shadow">
-              <div class="face front">
+            <div class="card border-shadow rounded-edges">
+              <div class="face front rounded-edges">
                   <table>
                     <tr>
                       <td align="center">Who are your clients?</td>
@@ -497,8 +494,8 @@
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-2">
           <div class="flip">
-            <div class="card border-shadow">
-              <div class="face front">
+            <div class="card border-shadow rounded-edges">
+              <div class="face front rounded-edges">
                   <table>
                     <tr>
                       <td align="center">How much time do you need to finish a project?</td>
@@ -518,8 +515,8 @@
 
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0">
           <div class="flip ">
-            <div class="card border-shadow">
-              <div class="face front">
+            <div class="card border-shadow rounded-edges">
+              <div class="face front rounded-edges">
                   <table>
                       <tr>
                         <td align="center">I would like to create a website, what should I do?</td>
