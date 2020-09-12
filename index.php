@@ -257,6 +257,33 @@
           <div class="flip">
             <div class="card border-shadow rounded-edges">
                 <div class="face front">
+                  <a href="https://bakeisyum.com/" target="_blank">
+                    <img src="img/BakeIsYum.png" alt="https://bakeisyum.com/"
+                    class="img-responsive fade">
+                    <div class="project-text on-hover text-center centered">
+                      <span>Bake is Yum</span><br>My Personal Blog for Baking<br><br>
+                      <span>bakeisyum.com</span></div>
+                  </a>
+                </div>
+              <div class="face back rounded-edges">
+                <table>
+                  <tr>
+                    <td align="center" class="project-text on-click text-center centered">
+                      <span>Bake is Yum</span><br>My Personal Blog for Baking<br>
+                      <a href="https://bakeisyum.com/" target="_blank">
+                      <i class="fa fa-link"></i></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end flip -->
+        </div>
+
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
+          <div class="flip">
+            <div class="card border-shadow rounded-edges">
+                <div class="face front">
                   <a href="http://pilatesstudioaskisi.gr/" target="_blank">
                     <img src="img/PilatesStudioAskisi.png"
                     alt="http://pilatesstudioaskisi.gr" class="img-responsive fade">
@@ -271,33 +298,6 @@
                     <td align="center" class="project-text on-click text-center centered">
                       <span>Pilates Studio Askisi</span><br>Professional Pilates Studio<br>
                       <a href="http://pilatesstudioaskisi.gr/" target="_blank">
-                      <i class="fa fa-link"></i></a>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </div> <!-- end card -->
-          </div> <!-- end flip -->
-        </div>
-
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-0">
-          <div class="flip">
-            <div class="card border-shadow rounded-edges">
-                <div class="face front">
-                  <a href="http://bakeisyum.herokuapp.com/" target="_blank">
-                    <img src="img/BakeIsYum.png" alt="http://bakeisyum.herokuapp.com"
-                    class="img-responsive fade">
-                    <div class="project-text on-hover text-center centered">
-                      <span>Bake is Yum</span><br>Demo Blog for Baking<br><br>
-                      <span>bakeisyum.herokuapp.com</span></div>
-                  </a>
-                </div>
-              <div class="face back rounded-edges">
-                <table>
-                  <tr>
-                    <td align="center" class="project-text on-click text-center centered">
-                      <span>Bake is Yum</span><br>Demo Blog for Baking<br>
-                      <a href="http://bakeisyum.herokuapp.com/" target="_blank">
                       <i class="fa fa-link"></i></a>
                     </td>
                   </tr>
