@@ -335,6 +335,33 @@
         </div>
         <!-- <a href="http://elinasbikeshop.herokuapp.com/" target="_blank">Visit W3Schools.com!</a> -->
         <!-- puzzle -->
+
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+          <div class="flip">
+            <div class="card border-shadow rounded-edges">
+                <div class="face front">
+                  <a href="https://piggetjedebouwer.herokuapp.com/" target="_blank">
+                    <img src="img/PiggyTheLittleBuilder.png"
+                    alt="https://piggetjedebouwer.herokuapp.com/" class="img-responsive fade">
+                    <div class="project-text on-hover text-center centered">
+                    <span>Piggy the Little Builder</span><br>Educational Game for Construction Materials<br>Designed and Developed for Vrije Universiteit Brussel<br><br>
+                    <span>piggetjedebouwer.herokuapp.com</span></div>
+                  </a>
+                </div>
+              <div class="face back rounded-edges">
+                <table>
+                  <tr>
+                    <td align="center" class="project-text on-click text-center centered">
+                      <span>Piggy the Little Builder</span><br>Educational Game<br>Vrije Universiteit Brussel<br>
+                      <a href="https://piggetjedebouwer.herokuapp.com/" target="_blank">
+                      <i class="fa fa-link"></i></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div> <!-- end card -->
+          </div> <!-- end flip -->
+        </div>
       </div> <!-- end row -->
       <hr>
     </div> <!-- end container-portfolio -->
