@@ -242,11 +242,11 @@ h2 {
 
 /* EDUCATION */
 .education {
-  height: 750px;
+  height: 950px;
 }
 
 .education .vertical-line {
-  height: 650px;
+  height: 850px;
 }
 
 #education-dot-2 {
@@ -258,6 +258,10 @@ h2 {
 
 #education-dot-4 {
   top: 500px;
+}
+
+#education-dot-5 {
+  top: 700px;
 }
 
 #education-card-1 {
@@ -274,6 +278,10 @@ h2 {
 
 #education-card-4 {
   top: 515px;
+}
+
+#education-card-5 {
+  top: 715px;
 }
 
 /* SKILLS */

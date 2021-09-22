@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   // Fade in sections in scrolling
   var experiencePart1Scrolled = false, experiencePart2Scrolled = false, experiencePart3Scrolled = false,
-    educationPart1Scrolled = false, educationPart2Scrolled = false,
+    educationPart1Scrolled = false, educationPart2Scrolled = false, educationPart3Scrolled = false,
     skillsScrolled = false, languagesScrolled = false, hobbiesScrolled = false;
   var windowHeight = $(window).height();
   var experiencePart1Top = $(".experience").offset().top
@@ -21,6 +21,7 @@ $(document).ready(function() {
   var experiencePart3Top = $("#experience-card-5").offset().top-30
   var educationPart1Top = $(".education").offset().top
   var educationPart2Top = $("#education-card-3").offset().top
+  var educationPart3Top = $("#education-card-5").offset().top
   var skillsTop = $(".skills").offset().top;
   var languagesTop = $(".languages").offset().top;
   var hobbiesTop = $(".hobbies").offset().top;
@@ -59,6 +60,9 @@ $(document).ready(function() {
       $("#education-card-3").addClass("slide-up-right");
       $("#education-card-4").addClass("slide-up-left");
       educationPart2Scrolled = true;
+    } else if ( scroll >= ( educationPart3Top - windowHeight + 3*offset) && !( educationPart3Scrolled ) ) {
+      $("#education-card-5").addClass("slide-up-right");
+      educationPart3Scrolled = true;
     } else if ( scroll >= ( skillsTop - windowHeight - offset ) && !( skillsScrolled ) ) {
       $(".skills").addClass("slide-up");
       loadBarSkills();
