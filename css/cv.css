@@ -189,11 +189,11 @@ h2 {
 
 /* EXPERIENCE */
 .experience {
-  height: 1150px;
+  height: 1230px;
 }
 
 .experience .vertical-line {
-  height: 1050px;
+  height: 1150px;
 }
 
 #experience-dot-2 {
@@ -205,16 +205,16 @@ h2 {
 }
 
 #experience-dot-4 {
-  top: 540px;
+  top: 570px;
 }
 
 #experience-dot-5 {
   top: 820px;
 }
 
-/* #experience-dot-6 {
-  top: 865px;
-} */
+#experience-dot-6 {
+  top: 940px;
+}
 
 #experience-card-1 {
   top: 115px;
@@ -229,16 +229,16 @@ h2 {
 }
 
 #experience-card-4 {
-  top: 555px;
+  top: 585px;
 }
 
 #experience-card-5 {
   top: 835px;
 }
 
-/* #experience-card-6 {
-  top: 880px;
-} */
+#experience-card-6 {
+  top: 955px;
+}
 
 /* EDUCATION */
 .education {
