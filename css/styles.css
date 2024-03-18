@@ -625,6 +625,7 @@ textarea {
 
 .contact-info {
   background-color: var(--blue);
+  font-size: 13px;
 }
 
 .contact-info,
